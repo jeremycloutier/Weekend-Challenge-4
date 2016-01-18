@@ -1,0 +1,14 @@
+body {
+    background-color: deepskyblue;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 24px;
+    color: white;
+}
+
+.well {
+    margin: 1px 0px;
+}

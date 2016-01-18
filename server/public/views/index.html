@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="weekendApp">
 <head>
     <meta charset="UTF-8">
-    <title>Theta Weekend Assignment 4</title>
+    <title>Angular/GitHub Weekend Assignment</title>
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="views/styles.css" rel="stylesheet">
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
 </head>
-<body>
-    <h1>Theta Weekend Assignment 4</h1>
+<body ng-controller="mainController">
+    <h1>Angular/GitHub Weekend Assignment</h1>
+
+    <div ng-repeat="item in controllerData.content" class="well col-md-6">
+        User: {{item.actor.login}} || Repo: {{item.repo.name}} || Type: {{item.type}}
+    </div>
+
 </body>
 </html>

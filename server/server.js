@@ -1,7 +1,5 @@
-/**
- * Created by jeremycloutier on 1/17/16.
- */
 var express = require('express');
+
 var app = express();
 
 app.use(express.static('server/public'));
